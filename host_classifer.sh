@@ -3,16 +3,18 @@
 # The input inventory file(s)
 FILES=$@
 
-# Inventory we'll increment as we find systems
-DEVELOPMENT=0
-PRODUCTION=0
-OTHER_ENV=0
-LINUX=0
-WINDOWS=0
-OTHER_OS=0
 
 for F in $FILES
 do
+
+    # Inventory we'll increment as we find systems
+    DEVELOPMENT=0
+    PRODUCTION=0
+    OTHER_ENV=0
+    LINUX=0
+    WINDOWS=0
+    OTHER_OS=0
+
     echo "===================="
     echo "File = $F"
 
@@ -48,11 +50,12 @@ do
 		;;
 	esac
     done
+    echo "OS Windows $WINDOWS"
+    echo "OS Linux $LINUX"
+    echo "OS Other $OTHER_OS"
+    echo "Environment Production $PRODUCTION"
+    echo "Environment Development $DEVELOPMENT"
+    echo "Environment Other $OTHER_ENV"
 done
 
-echo "OS Windows $WINDOWS"
-echo "OS Linux $LINUX"
-echo "OS Other $OTHER_OS"
-echo "Environment Production $PRODUCTION"
-echo "Environment Development $DEVELOPMENT"
-echo "Environment Other $OTHER_ENV"
+
