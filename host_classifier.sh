@@ -50,12 +50,12 @@ do
 		;;
 	esac
     done
-    echo "OS Windows $WINDOWS"
-    echo "OS Linux $LINUX"
-    echo "OS Other $OTHER_OS"
-    echo "Environment Production $PRODUCTION"
-    echo "Environment Development $DEVELOPMENT"
-    echo "Environment Other $OTHER_ENV"
+    echo "OS Windows = $WINDOWS"
+    echo "OS Linux   = $LINUX"
+    echo "OS Other   = $OTHER_OS"
+    echo "Environment Production  = $PRODUCTION"
+    echo "Environment Development = $DEVELOPMENT"
+    echo "Environment Other       = $OTHER_ENV"
 done
 
 
